@@ -22,23 +22,12 @@ further references:
 please see application.properties files in resources folder and select a active profile "dev" or "com" to run project. you can check test methods too.  
 
 1. Obtaining Client Credentials:
-To obtain client credentials for Google OAuth2 authentication, head on over to the Google API Console(https://console.developers.google.com/) – section “Credentials”.
-
-Here we'll create credentials of type “OAuth2 Client ID” for our web application. This results in Google setting up a client id and secret for us.
-
-We also have to configure an authorized redirect URI in the Google Console, which is the path that users will be redirected to after they successfully login with Google.
-
-By default, Spring Boot configures this redirect URI as /login/oauth2/code/{registrationId}. Therefore, for Google we'll add the URI:
-http://localhost:8081/login/oauth2/code/google
-To obtain the client credentials for authentication with Facebook, we need to register an application on the Facebook for Developers website and set up the corresponding URI as a “Valid OAuth redirect URI”:
-http://localhost:8081/login/oauth2/code/facebook
-
-i created one in my google eng.motahari@gmail.com account:
--CreationDate: Nov 9, 2020
--Type: Web application
--ClientName: MotahariniaWebClientTest
--ClientID: 293968140710-ghegfr1havv59mma3slftthlliheovaf.apps.googleusercontent.com
--ClientSecret: ViwbIgbYO0Jvyl6JAAncE6tt
+To obtain client credentials for Google OAuth2 authentication, head on over to the Google API Console(https://console.developers.google.com/) – section “Credentials”. Here we'll create credentials of type “OAuth2 Client ID” for our web application. This results in Google setting up a client id and secret for us. We also have to configure an authorized redirect URI in the Google Console, which is the path that users will be redirected to after they successfully login with Google. By default, Spring Boot configures this redirect URI as /login/oauth2/code/{registrationId}. Therefore, for Google we'll add the URI: http://localhost:8081/login/oauth2/code/google. To obtain the client credentials for authentication with Facebook, we need to register an application on the Facebook for Developers website and set up the corresponding URI as a “Valid OAuth redirect URI”: http://localhost:8081/login/oauth2/code/facebook. i created one in my google eng.motahari@gmail.com account:
+-CreationDate: Nov 9, 2020  
+-Type: Web application  
+-ClientName: MotahariniaWebClientTest   
+-ClientID: 293968140710-ghegfr1havv59mma3slftthlliheovaf.apps.googleusercontent.com 
+-ClientSecret: ViwbIgbYO0Jvyl6JAAncE6tt 
 
 2. Next, we need to add the client credentials to the application.properties file:
 spring.security.oauth2.client.registration.google.client-id=293968140710-ghegfr1havv59mma3slftthlliheovaf.apps.googleusercontent.com
