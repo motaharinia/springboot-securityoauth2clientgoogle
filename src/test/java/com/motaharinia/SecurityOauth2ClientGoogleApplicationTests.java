@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SecuritySocialLoginClientApplicationTests {
+class SecurityOauth2ClientGoogleApplicationTests {
 
     @Test
     void contextLoads() {

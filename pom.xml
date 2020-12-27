@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.motaharinia</groupId>
-    <artifactId>springboot-securityoauth2clientgoogle</artifactId>
+    <artifactId>SecurityOauth2ClientGoogle</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-securityoauth2clientgoogle</name>
-    <description>Motaharinia-Sample springboot-securityoauth2clientgoogle</description>
+    <name>SecurityOauth2ClientGoogle</name>
+    <description>Motaharinia-Sample SecurityOauth2ClientGoogle</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
